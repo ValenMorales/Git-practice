@@ -3,12 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --primary-color: #125e8a;
+  --secondary-color: #197bbd;
+  --tertiary-color: #343a40;
 }
 
-.header,
-.main,
-.footer {
-  width: 98%;
-  max-width: 1200px;
-  margin: 0 auto;
+body {
+  width: 100dvw;
+  height: 100dvh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }

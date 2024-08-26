@@ -1,29 +1,42 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
-  width: 100dvw;
-
+  color: white;
+  width: 100%;
+  
   .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 1rem;
+    padding: 1rem 1.2rem;
+    background-color: var(--primary-color);
+
+    .header-title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
     
-    ul {
+    .header-action-buttons {
       display: flex;
       align-items: center;
       gap: 1rem;
       list-style: none;
-    }
 
-    .action-buttons {
-      color: white;
-      font-weight: 700;
-      background-color: rgb(25, 110, 17);
+      .header-action-button a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 700;
+        background-color: white;
+        transition: all 0.3s;
+      }
+
+      .header-action-button a:hover {
+        background-color: var(--secondary-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
@@ -31,20 +44,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 0.5rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    ul {
+    .nb-routes {
       display: flex;
       align-items: center;
-      gap: 2rem;
       list-style: none;
-    }
+      
+      li a {
+        padding: 0.8rem 4rem;
+      }
 
-    .route:hover {
-      cursor: pointer;
-      font-weight: bold;
-      color: rgb(60, 219, 60);
+      .nb-route a {
+        color: black;
+        font-weight: 400;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+
+      .nb-route-actived a {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.05);
+        font-weight: bold;
+        border-bottom: 2px solid var(--secondary-color);
+        color: var(--secondary-color);
+      }
+
+      .nb-route a:hover {
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--secondary-color);
+        opacity: 0.8;
+      }
     }
   }
 }
