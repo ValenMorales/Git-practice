@@ -1,24 +1,20 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
-  width: 100dvw;
-
+  color: white;
+  width: 100%;
+  
   .header-content {
     display: flex;
-    background-color: var(--primary-color);
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0 1.2rem;
+    padding: 1rem 1.2rem;
+    background-color: var(--primary-color);
 
     .header-title {
       font-size: 2rem;
       font-weight: 700;
-      color: white;
-      padding: 1rem;
     }
     
     .header-action-buttons {
@@ -39,14 +35,12 @@
 
       .header-action-button a:hover {
         background-color: var(--secondary-color);
-        color: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
     }
   }
 
   .nav-bar {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
