@@ -46,18 +46,19 @@
   }
 
   .nav-bar {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     .nb-routes {
       display: flex;
       align-items: center;
-      gap: 5rem;
       list-style: none;
       
       li a {
-        padding: 0.8rem 2rem;
+        padding: 0.8rem 4rem;
       }
 
       .nb-route a {
