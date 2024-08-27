@@ -1,0 +1,29 @@
+.brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.brand:hover{
+    transform: scale(1.05);
+}
+
+.brand__name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.brand__img{
+    width: 10rem;
+    height: 10rem;
+
+    margin-bottom: 1rem;
+}
