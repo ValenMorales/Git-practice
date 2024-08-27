@@ -1,0 +1,9 @@
+.card-img{
+    max-width: 20rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+}

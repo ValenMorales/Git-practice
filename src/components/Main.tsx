@@ -1,5 +1,4 @@
 import "../styles/Main.css";
-import '../styles/Content_section.css'
 import Card from './Card'
 
 export default function Main() {
@@ -7,8 +6,13 @@ export default function Main() {
     <main className="main">
       <aside className="main__aside">aside</aside>
       <section className="main__products">
-        <Card img="src/assets/pexels-introspectivedsgn-5158198.jpg"/>
-        <Card img="src/assets/pexels-bertellifotografia-10182908.jpg"/>
+        <div className="title-container">
+          <span className="title">Our sports line</span>
+        </div>
+        <div className="cars">
+          <Card className="car-img" img="src/assets/pexels-bob-ronald-334686276-14832852.jpg"/>
+          <Card className="car-img" img="src/assets/pexels-bertellifotografia-3007436.jpg"/>
+        </div>
       </section>
     </main>
   );
