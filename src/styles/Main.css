@@ -1,8 +1,24 @@
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 10px;
+  gap: 1rem;
+}
+
+.main .main__products{
+  width: 69%;
+  min-height: 80dvh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__products{
+  display: flex;
+  flex-direction: column;
 }
 
 .main .main__aside {
@@ -13,8 +29,41 @@
   flex-direction: column;
 }
 
+.main_section{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.cars{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.title-container{
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.3rem solid #6e6d6d;
+}
+
+.title{
+  font-size: 2rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#eeeeee, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .categories-title{
-    margin:10px 0;
+  margin:10px 0;
   font-size: 20px;
   text-align: center;
 }
@@ -47,14 +96,4 @@
   cursor: pointer;
   transform: scale(0.9);
   font-weight: bold;
-}
-
-.main .main__products {
-  width: 69%;
-  background: #77b777;
-  min-height: 80dvh;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
