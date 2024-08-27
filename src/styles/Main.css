@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 10px;
   gap: 1rem;
 }
 
 .main .main__products{
   width: 69%;
   min-height: 80dvh;
+  margin: 2rem 0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -22,9 +21,9 @@
 }
 
 .main .main__aside {
-  width: 30%;
-  min-height: 80dvh;
-  background: #77b777;
+  width: 55%;
+  min-height: 100dvh;
+  background: var(--primary-color);
   display: flex;
   flex-direction: column;
 }
@@ -56,6 +55,7 @@
 }
 
 .brand-section{
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -66,13 +66,13 @@
   margin:10px 0;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 .categories-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -92,7 +92,9 @@
 }
 
 .item-list:hover {
-  background: #78a373;
+  background: var(--secondary-color);
+  color: white;
+  opacity: 0.8;
   cursor: pointer;
   transform: scale(0.9);
   font-weight: bold;
